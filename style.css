@@ -1,0 +1,119 @@
+:root {
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+}
+
+/* Define a cor do background e dos textos. Organiza o display no estilo flex e impõe uma margem.*/
+
+html, body {
+	margin: 0;
+}
+
+body {
+	background-color: var(--body-bg-color);
+	color: var(--text-color);
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Configurações sobre a coluna lateral. */
+aside {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	margin: 2.7%;
+	width: calc(24vw - 2.7%);
+	border: 1px solid red;
+}
+
+div {
+	background-color: var(--bg-cards);
+	height: 100px;
+	padding: 20px;
+	border-radius: 10px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+
+div:last-child {
+	margin-right: 0;
+}
+
+.aside-box {
+	width: 100%;
+	height: auto;
+}
+
+.profile-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.profile-box p {
+	font-weight: bold;
+	font-size: larger;
+}
+
+main {
+	display: flex;
+	width: calc(66vw - 2.7%);
+	flex-wrap: wrap;
+	flex-basis: 70.9%;
+	align-items: center;
+	align-self: flex-start;
+	border: 1px solid red;
+	margin: 2.7%;
+	justify-content: space-between;
+}
+
+.large-main-box {
+	flex-basis: 1000px;
+}
+
+.main-box {
+	flex-grow: 1;
+	height: 80px;
+	align-items: center;
+	align-self: flex-start;
+}
+
+.first-main-box,
+.third-main-box,
+.fourth-main-box {
+	width: 100%;
+}
+
+.first-main-box {
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.left-little-main-box,
+.right-little-main-box {
+  flex-basis: calc(50% - 10px);
+}
+
+.left-little-main-box {
+  margin-right: 20px;
+}
+
+
+.third-main-box {
+	height: auto;
+	padding: 7px 0 10px 20px;
+	justify-content: center;
+}
+
+.fourth-main-box {
+	height: auto;
+	align-items: start;
+}
+
+.profile-picture {
+	border: 2px solid #00FF00;
+	border-radius: 50%;
+}
