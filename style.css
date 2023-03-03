@@ -85,24 +85,33 @@ div {
   transition: 0.3s;
 }
 
+.informations * {
+  /* border: #00ff00 1px solid; */
+}
+
 .informations {
   display: flex;
   flex-wrap: wrap;
 }
 
-.informations i {
+.informations img {
   display: flex;
   justify-content: end;
-  width: 17px;
+  width: 24px;
+  height: 24px;
 }
 
 .links {
   text-decoration: none;
-  flex-basis: calc(100% - 29px);
+  flex-basis: calc(100% - 38px);
   margin-left: 0.6rem;
   font-size: 12px;
   font-weight: 400;
-  padding-top: 0.07rem;
+  padding-top: 0.35rem;
+}
+
+.links:last-child {
+  padding-top: 0.3em;
 }
 
 .links:hover {
